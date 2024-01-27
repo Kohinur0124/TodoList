@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  todoproject.api:
+    image: ${DOCKER_REGISTRY-}todoprojectapi
+    build:
+      context: .
+      dockerfile: src/ToDoProject.Api/Dockerfile
