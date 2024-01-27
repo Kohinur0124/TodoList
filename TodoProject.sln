@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoProject.Infrastructure"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.Application", "src\ToDoList.Application\ToDoList.Application.csproj", "{AF60FF7C-5E50-41FD-9D21-600EC4A981D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoUi", "..\ToDoUi\ToDoUi.csproj", "{CC9B4B66-BA2A-45CC-A87E-9A5421908D67}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{75AA3065-B71F-44BF-A266-8FFBD604A7BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{AF60FF7C-5E50-41FD-9D21-600EC4A981D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF60FF7C-5E50-41FD-9D21-600EC4A981D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF60FF7C-5E50-41FD-9D21-600EC4A981D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC9B4B66-BA2A-45CC-A87E-9A5421908D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC9B4B66-BA2A-45CC-A87E-9A5421908D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC9B4B66-BA2A-45CC-A87E-9A5421908D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC9B4B66-BA2A-45CC-A87E-9A5421908D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AA3065-B71F-44BF-A266-8FFBD604A7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AA3065-B71F-44BF-A266-8FFBD604A7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AA3065-B71F-44BF-A266-8FFBD604A7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AA3065-B71F-44BF-A266-8FFBD604A7BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

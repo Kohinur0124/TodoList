@@ -1,8 +1,38 @@
+
 version: '3.4'
 
+networks:
+  backend:
+
+
+
 services:
-  todoproject.api:
-    image: ${DOCKER_REGISTRY-}todoprojectapi
-    build:
-      context: .
-      dockerfile: src/ToDoProject.Api/Dockerfile
+
+    dbToDoProject:
+        container_name: dbToDoProject-container
+        image:  mcr.microsoft.com/mssql/server:2019-latest
+        environment:
+          - ACCEPT_EULA=Y
+          - SA_PASSWORD=Word!5434#
+        ports:
+          - 1780:1433 
+        networks:
+          - backend
+        volumes:
+          - c:\mssql:/var/opt/mssql/data
+
+
+    todoproject.api:
+        image: ${DOCKER_REGISTRY-}todoprojectapi
+        build:
+          context: .
+          dockerfile: src/ToDoProject.Api/Dockerfile
+        networks:
+          - backend
+        ports:
+          - 1456:8080
+  
+        environment:
+            - DB_HOST=dbToDoProject
+            - DB_NAME=ToDoData
+            - SA_PASSWORD=Word!5434#

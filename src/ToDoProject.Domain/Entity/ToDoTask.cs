@@ -1,33 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using ToDoProject.Domain.Enums;
 using TaskStatus = ToDoProject.Domain.Enums.TaskStatus;
 
 namespace ToDoProject.Domain.Entity
 {
-    
-    public class ToDoTask
-    {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public string TaskTitle { get; set; }
-        public string TaskDescription { get; set; }
-        public DateTime TaskDueDate { get; set; }
-        public int TaskPriority { get; set; }
-        public TaskStatus TaskState {  get; set; }
-        public  string  TaskNote { get; set; }
 
-        public DateTime CratedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public DateTime? DeletedAt { get; set; }
 
-    
-        public User User { get; set; }
+	[Table("ToDoTask", Schema = "dbo")]
+	public class ToDoTask
+	{
+		[Key]
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		[Column("Id")]
+		public int Id { get; set; }
 
-    }
+		[Column("UserId")]
+		[ForeignKey("UserId")]
+		public int UserId { get; set; }
+		[Column("TaskTitle")]
+		public string TaskTitle { get; set; }
+		[Column("TaskDescription")]
+		public string TaskDescription { get; set; }
+		[Column("TaskDueDate")]
+		public DateTime TaskDueDate { get; set; }
+		[Column("TaskPriority")]
+		public int TaskPriority { get; set; }
+		[Column("TaskState")]
+		public TaskStatus TaskState { get; set; }
+		[Column("TaskNote")]
+		public string TaskNote { get; set; }
+
+		[Column("CratedAt")]
+		public DateTime CratedAt { get; set; }
+		[Column("UpdatedAt")]
+		public DateTime? UpdatedAt { get; set; }
+		[Column("DeletedAt")]
+		public DateTime? DeletedAt { get; set; }
+
+
+		public User User { get; set; }
+
+	}
 }

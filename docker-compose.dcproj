@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>6957eee4-2ac8-4df7-8c85-d216e5ee71d8</ProjectGuid>
+    <ProjectGuid>75aa3065-b71f-44bf-a266-8ffbd604a7bf</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>todoproject.api</DockerServiceName>
