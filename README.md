@@ -38,3 +38,11 @@ The system should consist of two main components:
     - Task State (e.g., To-Do, In Progress, Completed)
     - Task Notes (if any)
     - Any additional properties deemed relevant to a task
+
+![image](https://github.com/Kohinur0124/TodoList/assets/118399896/91fc9c49-197a-4d35-91c6-05b7604b5e6d)
+1. copy url
+![image](https://github.com/Kohinur0124/TodoList/assets/118399896/e6c293dd-2d1c-4b11-ab7a-57dea33e521f)
+2.git clone url
+3.Open Docker
+4.Run Project (Docker Compose)
+
